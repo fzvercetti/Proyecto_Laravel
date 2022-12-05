@@ -48,3 +48,7 @@ Route::put('/ganaderos/editar/{id}',  [GanaderoController::class, 'update']);
 Route::get('/ganaderos/eliminar/{id}', [GanaderoController::class, 'destroy']);
 
 require __DIR__.'/auth.php';
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

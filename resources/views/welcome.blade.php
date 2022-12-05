@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
     <head>
+      
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
    
@@ -9,22 +11,28 @@
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
         <!-- Styles -->      
 
         <style>
+
             * {
   box-sizing: border-box;
 }
 
 .topnav {
-  background-color: #333;
+  background-color: #094293;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #1919e6;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -55,8 +63,8 @@ body {
   padding: 25px;
   font-size: 40px;
   text-align: center;
-  background: #020829;
-  color: white;
+  background: white;
+  color: black;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -82,7 +90,7 @@ body {
 
 /* Add a card effect for articles */
 .card{
-   background-color: #020829;
+   background-color: #094293;
    padding: 20px;
    margin-top: 20px;
    color: white;
@@ -123,21 +131,22 @@ body {
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
                     @else
-                    <button type="button" class="btn btn-primary">
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-                        </button>
 
+                    <div align="right">
+                    <a class="btn btn-danger" 
+                    href="{{ route('login') }}">Iniciar</a>
+                    
                         @if (Route::has('register'))
-                        <button type="button" class="btn btn-dark">
-                            <a href="{{ route('register') }}" >Register</a>
-                            </button>
+                        <a class="btn btn-primary" 
+                            href="{{ route('register') }}" >Registro</a>
+                            </div>        
                         @endif
                     @endauth
                 </div>
                 @endif
     
 <div class="header">
-  <h2>SCBOCV </h2>
+  <h2>SCBOCV</h2>
   <h5> Sistema de Clasificación Bovina Ciudad Valles</h5>
 </div>
 
@@ -154,7 +163,7 @@ body {
     <div class="card">
       <h2>Contacto</h2>
       <h5>Pon aqui el contacto FELIPE</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <div class="fakeimg" style="height:200px;"></div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
