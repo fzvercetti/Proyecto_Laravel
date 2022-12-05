@@ -13,7 +13,7 @@ class Ganadero extends Model
 
     protected $table = "ganaderos";
 
-    protected $fillable = ['nombre', 'edad', 'estado', 'municipio'];
+    protected $fillable = ['nombre', 'apellido', 'edad', 'matricula', 'ubicacion'];
 
     protected $hidden = ['id'];
 

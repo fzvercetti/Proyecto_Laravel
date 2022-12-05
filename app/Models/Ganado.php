@@ -13,7 +13,7 @@ class Ganado extends Model
 
     protected $table = "bovino";
 
-    protected $fillable = ['raza', 'propietario', 'edad', 'matricula'];
+    protected $fillable = ['raza', 'peso', 'edad', 'arete', 'propietario'];
 
     protected $hidden = ['id'];
 
