@@ -47,6 +47,21 @@ Route::get('/ganaderos/editar/{id}', [GanaderoController::class, 'edit']);
 Route::put('/ganaderos/editar/{id}',  [GanaderoController::class, 'update']);
 Route::get('/ganaderos/eliminar/{id}', [GanaderoController::class, 'destroy']);
 
+Route::get('/prueba',function(){
+    return view('prueba.index');
+});
+
+Route::get('/ganado1',function(){
+    return view('ganado1.vacas');
+});
+
+Route::get('/ganado2',function(){
+    return view('ganado2.vacas2');
+});
+
+Route::get('/ganado3',function(){
+    return view('ganado3.vacas3');
+});
 require __DIR__.'/auth.php';
 
 Auth::routes();
