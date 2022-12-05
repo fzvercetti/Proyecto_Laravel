@@ -6,44 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <style>
-        body {
+       
+       body {
             margin: auto;
             padding: 50px;
         }
 
-        input[type=text],
-        select {
+        table,
+        td,
+        th {
+            border: 2px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
             width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
         }
 
-        input[type=submit] {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+        th {
+            height: 70px;
         }
 
-        input[type=submit]:hover {
-            background-color: #45a049;
+        td {
+            height: 30px;
         }
 
-        div {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
+  
+
+
     </style>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation"></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" href="/ganaderos/crear" aria-current="page">Crear registros <span class="visually-hidden"></span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/ganaderos">Ver registros</a>
+              </li>
+             
+              
+          </ul>
+          
+      </div>
+  </nav>
+  <!-- navigation bar ends here -->
 </head>
 
 <body>
@@ -54,9 +67,11 @@
 
     <div>
         <p> Nombre: {{ $ganadero->nombre}}</p>
+        <p> Apellido: {{ $ganadero->apellido}}</p>
         <p> Edad: {{ $ganadero->edad}}</p>
-        <p> Estado: {{ $ganadero->estado}}</p>
-        <p> Municipio: {{ $ganadero->municipio}}</p>
+        <p> Matricula: {{ $ganadero->matricula}}</p>
+        <p> Ubicacion: {{ $ganadero->ubicacion}}</p>
+
     </div>
 </body>
 

@@ -58,15 +58,17 @@
             <label>Raza:</label>
             <input type="text" name="raza" placeholder="raza" value="{{ $ganado->raza}}">
 
-            <label>Propietario:</label>
-            <input type="text" name="propietario" placeholder="propietario" value="{{ $ganado->propietario}}">
+            <label>Peso:</label>
+            <input type="text" name="peso" placeholder="peso" value="{{ $ganado->raza}}">
 
             <label>Edad:</label>
             <input type="text" name="edad" placeholder="edad" value="{{ $ganado->edad}}">
 
-            <label>Matricula:</label>
-            <input type="text" name="matricula" placeholder="matricula" value="{{ $ganado->matricula}}">
+            <label>Arete:</label>
+            <input type="text" name="arete" placeholder="Arete" value="{{ $ganado->arete}}">
 
+            <label>Propietario:</label>
+            <input type="text" name="propietario" placeholder="propietario" value="{{ $ganado->propietario}}">
 
             <input type="submit" value="Guardar">
         </form>
