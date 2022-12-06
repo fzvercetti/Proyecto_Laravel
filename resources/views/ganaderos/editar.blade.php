@@ -89,7 +89,7 @@
             <input type="text" name="matricula" placeholder="Matricula" value="{{ $ganadero->matricula}}">
 
             <label>Ubicacion:</label>
-            <input type="text" name="matricula" placeholder="Matricula" value="{{ $ganadero->ubicacion}}">
+            <input type="text" name="ubicacion" placeholder="ubicacion" value="{{ $ganadero->ubicacion}}">
 
             <input type="submit" value="Guardar">
         </form>
