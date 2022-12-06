@@ -64,6 +64,7 @@
         <p> Raza: {{ $ganado->raza}}</p>
         <p> Peso: {{ $ganado->peso}}</p>
         <p> Edad: {{ $ganado->edad}}</p>
+        <p> Matricula: {{ $ganado->matricula}}</p>
         <p> Arete: {{ $ganado->arete}}</p>
         <p> Propietario: {{ $ganado->propietario}}</p>
 

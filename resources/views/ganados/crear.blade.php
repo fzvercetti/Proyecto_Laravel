@@ -84,6 +84,9 @@
             <label>Edad:</label>
             <input type="text" name="edad" placeholder="Edad">
 
+            <label>Matricula:</label>
+            <input type="text" name="matricula" placeholder="Matricula">
+
             <label>Arete:</label>
             <input type="text" name="arete" placeholder="Arete">
           

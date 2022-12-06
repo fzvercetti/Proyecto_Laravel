@@ -63,6 +63,8 @@
 
             <label>Edad:</label>
             <input type="text" name="edad" placeholder="edad" value="{{ $ganado->edad}}">
+            <label>Matricula:</label>
+            <input type="text" name="matricula" placeholder="matricula" value="{{ $ganado->matricula}}">
 
             <label>Arete:</label>
             <input type="text" name="arete" placeholder="Arete" value="{{ $ganado->arete}}">

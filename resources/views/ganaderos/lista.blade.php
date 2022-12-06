@@ -104,7 +104,7 @@
   
 
     <br>
-    <button class="btn default"> <a href="/ganaderos/crear">Registro de ganado</a></button>
+    <button class="btn default"> <a href="/ganaderos/crear">Registrar ganaddero</a></button>
    
 </body>
 

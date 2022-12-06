@@ -92,6 +92,7 @@
         <td>{{ $ganado->raza }}</td>
             <td>{{ $ganado->peso }}</td>
             <td>{{ $ganado->edad }}</td>
+            <td>{{ $ganado->matricula }}</td>
             <td>{{ $ganado->arete }}</td>
             <td>{{ $ganado->propietario }}</td>
             <td>
@@ -105,7 +106,8 @@
       </thead>
     </table>
   </div>
-
+  <br>
+    <button class="btn default"> <a href="/ganados/crear">Registro de ganado</a></button>
 </body>
 
 <script>
